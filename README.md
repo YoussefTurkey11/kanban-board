@@ -47,6 +47,10 @@ npm install
 npm run server
 ```
 
+```
+http://localhost:4000/tasks
+```
+
 ### 4️⃣ Run the frontend development server
 
 ```bash
