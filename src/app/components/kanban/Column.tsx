@@ -38,7 +38,7 @@ const Column = ({ status }: { status: TTaskStatus }) => {
   return (
     <section
       ref={setNodeRef}
-      className="p-5 rounded-lg bg-muted/50 border border-ring/30 min-h-175 hover:shadow-lg transition-all"
+      className="min-w-85 max-w-85 shrink-0 p-5 rounded-lg bg-muted/50 border border-ring/30 min-h-175 hover:shadow-lg transition-all"
     >
       <div className="mb-5 flex items-center gap-3">
         <div

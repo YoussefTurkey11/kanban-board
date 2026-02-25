@@ -27,7 +27,7 @@ const Board = () => {
 
   return (
     <DndContext onDragEnd={handleDragEnd}>
-      <div className="grid grid-cols-4 gap-5 py-5 container mx-auto">
+      <div className="flex gap-5 p-5 md:py-5 container mx-auto overflow-x-auto">
         {columns.map((status) => (
           <Column key={status} status={status} />
         ))}
