@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗂️ Kanban Board
 
-## Getting Started
+Frontend Assessment Project for **Mind Luster**
 
-First, run the development server:
+A modern Kanban Board application built with Next.js and modern frontend tools.  
+The project demonstrates clean architecture, state management, drag & drop, and API integration.
+
+---
+
+## 🚀 Tech Stack
+
+- Next.js v16
+- TypeScript
+- TailwindCSS
+- Redux Toolkit (RTK)
+- RTK Query
+- shadcn/ui
+- dnd-kit
+- json-server (Mock API)
+
+---
+
+## 📸 Project Preview
+
+![Kanban Board Screenshot](./public/screenshoot.png)
+
+---
+
+## ⚙️ How To Run The Project
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone <https://github.com/YoussefTurkey11/kanban-board.git>
+cd kanban-board
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the mock API (json-server)
+
+```bash
+npm run server
+```
+
+### 4️⃣ Run the frontend development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Now open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗️ Architecture
 
-## Learn More
+The project follows a Component-Based Architecture
+with clean separation of concerns and scalable folder structure.
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+│
+├── app/
+│
+├── components/
+│   ├── kanban/
+│   │   ├── Board
+│   │   ├── Column
+│   │   ├── CreateTaskDialog
+│   │   ├── EditTaskDialog
+│   │   └── TaskCard
+│   │
+│   ├── layout/
+│   │   └── Header
+│   │
+│   └── shared/
+│       ├── Logo
+│       └── Search
+│
+├── hooks/
+│   ├── useColumnTask
+│   └── useDebounce
+│
+├── redux/
+│   ├── store
+│   ├── provider
+│   ├── baseApi
+│   │
+│   ├── slices/
+│   │   └── uiSlice
+│   │
+│   └── apis/
+│       └── taskApi
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Create, Edit, Delete Tasks
+- Drag & Drop between columns
+- Column-based filtering
+- Search functionality
+- Infinit scrolling
+- Optimized state management with RTK Query
+- Clean UI with shadcn components
 
-## Deploy on Vercel
+## 🎯 Purpose
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project was built as a technical assessment for Mind Luster
+to demonstrate frontend architecture, clean code practices, and state management skills.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Youssef El-Turkey
+
+##### Frontend Developer
