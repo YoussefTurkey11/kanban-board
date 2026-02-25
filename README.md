@@ -115,6 +115,6 @@ src/
 This project was built as a technical assessment for Mind Luster
 to demonstrate frontend architecture, clean code practices, and state management skills.
 
-# Youssef El-Turkey
+##### Youssef El-Turkey
 
 ##### Frontend Developer
